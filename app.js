@@ -36,12 +36,12 @@ function watch() {
   let hours = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
-  let session = "AM"
+  let session = "PM"
  // console.log(`${hours} : ${minutes} ${seconds}`);
 
   if (hours >= 12) {
     hours = hours - 12;
-    session = "PM"
+    session = "AM"
   }
 
   hours =  hours < 10 ? "0" +  hours :  hours ;
