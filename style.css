@@ -1,0 +1,53 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-image: url(./img/antique-clock-night-table-wakes-me-up-generated-by-ai.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    color: #ccc;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.8rem;
+    /* font-family: "Poppins", sans-serif; */
+    font-style: italic;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px #000;
+}
+.box{
+    height: auto;
+    width: 350px;
+}
+.box > h1{
+    color: #ccc;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    /* font-family: "Poppins", sans-serif; */
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 4px #000;
+}
+.box > h4{
+    color: #ccc;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    /* font-family: "Poppins", sans-serif; */
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 4px #000;
+}
