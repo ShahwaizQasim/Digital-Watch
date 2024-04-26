@@ -1,6 +1,24 @@
 function watch() {
   let date = new Date();
 
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
+  let session = "PM"
+ // console.log(`${hours} : ${minutes} ${seconds}`);
+
+  if (hours >= 12) {
+    hours = hours - 12;
+    session = "AM"
+  }
+  if (hours == 0) {
+    hours = 12;
+  }
+
+  hours =  hours < 10 ? "0" +  hours :  hours ;
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
+
   const weekdays = [
     "Sunday",
     "Monday",
@@ -33,20 +51,6 @@ function watch() {
   //let todayDate = `${month} ${day}, ${year}`;
   //console.log(todayDate);
 
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-  let session = "PM"
- // console.log(`${hours} : ${minutes} ${seconds}`);
-
-  if (hours >= 12) {
-    hours = hours - 12;
-    session = "AM"
-  }
-
-  hours =  hours < 10 ? "0" +  hours :  hours ;
-  minutes = minutes < 10 ? "0" + minutes : minutes;
-  seconds = seconds < 10 ? "0" + seconds : seconds;
 
   document.getElementById("timeprint").innerHTML = `${hours}: ${minutes}: ${seconds} ${session}`;
   document.getElementById("dayprint").innerHTML = `${weekday}, ${month} ${day}, ${year}`;
