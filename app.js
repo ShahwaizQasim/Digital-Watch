@@ -57,8 +57,8 @@ function watch() {
 }
 setInterval(watch,1000)
 
-  // let short_date = date.toLocaleDateString(); is function se asani se date nikal jati hai 
-  // let short_time = date.toLocaleTimeString(); is function se time nikal jata hai AM PM ky sath
+  // toLocaleDateString(); is function se asani se date nikal jati hai 
+  // toLocaleTimeString(); is function se time nikal jata hai AM PM ky sath
 
 
 // function tech() {
